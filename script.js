@@ -1,21 +1,4 @@
-(function() {
-    var formulario = document.getElementsByName('formulario')[0],
-        elementos = formulario.elements,
-        boton = document.getElementById('btn');
+function answer() {
+    alert("Thank you, I will answer your message as soon as possible");
 
-    var validarNombre = function(e) {
-        if (formulario.name.value == 0) {
-            alert("Please write your name");
-            e.preventDefault();
-        }
-    };
-
-
-    var validar = function(e) {
-        validarNombre(e);
-
-
-    };
-    formulario.addEventListener('submit', validar);
-
-}())
+}
